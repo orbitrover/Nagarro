@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<div class="jumbotron text-center">
+		<h1>Search Wiki</h1>
+		<p>Enter the search query to search on Wikipedia (eg: 'ford')</p>
+		<form method="POST">
+			<div class="form-group">
+				<label for="sstr" >Search here : </label>
+				<input id="sstr" class="form-control" type="text" name="search_string">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+{% endblock %}
